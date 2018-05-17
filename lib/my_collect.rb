@@ -3,7 +3,7 @@ def my_collect(list)
     n=0
     output=[]
     while n<list.length do
-      output.push(yield(list[n]))
+      output.push(yield(list[n])) ## yield is an active block which can be pushed into another obj
       n = n + 1
     end
     return output
