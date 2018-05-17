@@ -3,8 +3,7 @@ def my_collect(list)
     n=0
     output=[]
     while n<list.length do
-      yield list[n]
-      output << list[n]
+      output.push(yield(list[n]))
       n = n + 1
     end
     return output
@@ -13,12 +12,12 @@ def my_collect(list)
   end
 end
 
-# students = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-# my_collect(students) do |student|
-#   student.split(" ").first
-# end
-#
-# languages = ['ruby', 'javascript', 'python', 'objective-c']
-# my_collect(languages) do |lang|
-#   lang.upcase
-# end
+students = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+my_collect(students) do |student|
+  student.split(" ").first
+end
+
+languages = ['ruby', 'javascript', 'python', 'objective-c']
+my_collect(languages) do |lang|
+  lang.upcase
+end
