@@ -13,12 +13,12 @@ def my_collect(list)
   end
 end
 
-# array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-# my_collect(array) do |name|
-#   name.split(" ").first
-# end
-#
-# languages = ['ruby', 'javascript', 'python', 'objective-c']
-# my_collect(languages) do |lang|
-#   lang.upcase
-# end
+students = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+my_collect(array) do |student|
+  student.split(" ").first
+end
+
+languages = ['ruby', 'javascript', 'python', 'objective-c']
+my_collect(languages) do |lang|
+  lang.upcase
+end
